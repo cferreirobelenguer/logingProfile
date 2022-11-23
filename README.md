@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# PROYECTO CON REACT DE CONSULTA DE API Y LOGUEO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Diseño
 
-## Available Scripts
+El diseño está basado en un challenge de frontend Mentor.
+Los estilos están hechos con css y sass.
 
-In the project directory, you can run:
+## Tecnologías
 
-### `npm start`
+React
+Sass
+Css: flexbox y grid
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionamiento
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+App que consulta una API de usuarios en el componente principal.
+Tiene un componente llamado UserItem que enseña un formulario al usuario en el cual tiene que poner su nombre y usuario.
+Si los datos están dentro de la API se llama al componente userDetailBody y este muestra los resultados en forma de card;
+en caso de que los resultados no estén se muestra que no están.
 
-### `npm test`
+### Vista Desktop inicial 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/88061350/203620677-972cef6a-007b-449c-8ec0-83cddc089fad.png)
 
-### `npm run build`
+### Vista Mobile inicial 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![localhost_3000_(iPhone SE) (1)](https://user-images.githubusercontent.com/88061350/203620824-f0137d1e-e62d-4fb9-9ed5-f6cabc4bab87.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Vista Desktop  cuando los datos se encuentran en la API 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/88061350/203621264-31b47729-3330-486e-b69f-e719ef564282.png)
 
-### `npm run eject`
+### Vista  Mobile cuando los datos se encuentran en la API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![localhost_3000_(iPhone SE) (2)](https://user-images.githubusercontent.com/88061350/203621213-5fbcdc09-59d7-4224-9b3a-72ec0620e11b.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Vista Desktop cuando no se encuentran datos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/88061350/203622915-93df30be-cf79-4637-8948-b749916ca34c.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Vista Mobile cuando no se encuentran datos
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![localhost_3000_(iPhone SE) (4)](https://user-images.githubusercontent.com/88061350/203622851-4c66b3ea-b4be-4a95-89a5-1870024ab2be.png)

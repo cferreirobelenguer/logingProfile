@@ -4,7 +4,7 @@ import { useFetch } from './components/hooks/useFetch';
 import UserItem from './components/UserItem'
 import Header from './components/Header'
 import "bootstrap/dist/css/bootstrap.min.css"
-import '../src/assets/scss/style.css'
+import '../src/assets/css/style.css'
 
 function App() {
   const {result,getData}=useFetch("https://randomuser.me/api/?results=1000")

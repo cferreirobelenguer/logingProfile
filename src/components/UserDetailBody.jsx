@@ -4,8 +4,11 @@ import imagen2 from '../assets/images/illustration-2.svg'
 export const UserDetailBody = ({ datos }) => {
   //Destructuración de objeto dataPerson pasado por props
   const { gender, firstName, lastName, email, picture, phone} = datos;
+  //Se renderiza sólo si hay resultados, en caso contrario sólo se renderiza el div de que no se encuentran resultados
+  if(datos.gender!==""){
   return (
     <>
+
       <div className="profile_container">
         <div className="profile_image">
           <img
@@ -58,4 +61,5 @@ export const UserDetailBody = ({ datos }) => {
       </div>
     </>
   );
+  }
 };
