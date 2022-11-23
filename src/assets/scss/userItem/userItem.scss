@@ -1,0 +1,50 @@
+@import '../medidas/medidas.scss';
+@import '../fonts/font.scss';
+@import '../color/color.scss';
+@import '../queries/queries.scss';
+
+//UserItem component
+
+
+.card_form{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 30px;
+    grid-gap:30px;
+    
+}
+.card_result{
+    background-color: $grisBlanco;
+}
+
+
+.card_formText{
+    display:grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin: 10px;
+    font-weight: $weight700;
+}
+#btnSubmit{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 10px;
+}
+#btnReset{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+//Responsive
+
+@include responsive_container{
+    .card_form{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        
+    }
+}

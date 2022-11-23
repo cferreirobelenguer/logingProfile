@@ -1,0 +1,11 @@
+@import '../medidas/medidas.scss';
+@import '../color/color.scss';
+
+//HEADER STYLE
+.header{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:$veinte $veinte $cincuenta $veinte;
+}

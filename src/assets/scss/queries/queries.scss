@@ -1,0 +1,6 @@
+
+@mixin responsive_container{
+    @media (max-width: 750px) {
+        @content;
+    }
+}

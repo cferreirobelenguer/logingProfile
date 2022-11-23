@@ -1,0 +1,96 @@
+@import '../color/color.scss';
+@import '../fonts/font.scss';
+@import '../medidas/medidas.scss';
+@import '../queries/queries.scss';
+
+.profile_wave{
+    max-width: $cien;
+}
+
+.profile_container{
+    background-color: $grisBlanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .profile_image{
+        padding:$veinte;
+        #profile_photo{
+            border-radius: 90px;
+        }
+    }
+    .profile_title{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+    }
+
+}
+.profile_name{
+    padding-right: $veinte;
+    font-weight: $weight400;
+    font-size: $diez;
+}
+.profile_gender{
+    font-weight: $weight400;
+    font-size: $diez;
+    text-align: center;
+    padding-bottom: $veinte;
+}
+
+.profile_email{
+    text-align: center;
+    background-color: white;
+    padding: $setenta;
+    width: $cien;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .email_text{
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email_image{
+        padding-left: 30px;
+    }
+    padding-bottom: 50px;
+}
+.no_results{
+    text-align: center;
+    font-weight: $weight700;
+    padding: 20px;
+    background-color: $grisBlanco;
+}
+.email_icon{
+    padding: $diez;
+}
+.email_title{
+    padding: $diez;
+}
+.phone_title{
+    padding: $diez;
+}
+.phone_icon{
+    padding:$diez;
+}
+
+//Responsive
+@include responsive_container{
+    .profile_email{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email_text{
+        padding: $veinte $veinte 50px $veinte;
+    }
+    .email_image{
+        padding: $veinte $veinte 50px $veinte;
+    }
+}
