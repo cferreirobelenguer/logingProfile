@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React,{useEffect} from 'react'
 import './App.css';
+import { useFetch } from './components/hooks/useFetch';
+import UserItem from './components/UserItem'
+
 
 function App() {
+  const {result,getData}=useFetch("https://randomuser.me/api/?results=1000")
+    //Llamada a la api y se pasan los resultados por props al componente useItem
+    useEffect(()=>{
+        getData()
+        
+    },[])
+    console.log(result)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserItem resultadoDatos={result}></UserItem>
     </div>
   );
 }
